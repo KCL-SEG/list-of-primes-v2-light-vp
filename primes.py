@@ -11,7 +11,7 @@ def primes(number_of_primes):
         while len(list) < number_of_primes:
             if isprime(x):
                 list.append(x)
-                x += 1
+            x += 1
     return list
 
 def isprime(number):
@@ -20,3 +20,5 @@ def isprime(number):
             return False
     else:
         return True
+
+print(primes(10))
